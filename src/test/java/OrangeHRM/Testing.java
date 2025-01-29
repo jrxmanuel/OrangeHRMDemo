@@ -54,8 +54,6 @@ public class Testing {
 
     }
 
-
-
     @Test(priority = 13)
     public void testPimMenu() {
         homepage.clickMenuItem("PIM");
