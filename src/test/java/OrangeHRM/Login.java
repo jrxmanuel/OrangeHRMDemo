@@ -37,6 +37,8 @@ public class Login {
 
     public String getDashboardHeader() {
         WebElement dashboardHeader = wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("h6")));
+        System.out.println("DASHBOARD LOADED");
         return dashboardHeader.getText();
+
     }
 }
