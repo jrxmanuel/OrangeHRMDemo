@@ -50,12 +50,13 @@ public class Admin {
         FindStatus.click();
         System.out.println("STATUS FILLED");
 
-
+        //EMPLOYEE NAME DROPDOWN
         WebElement FindEmployeeName = wait.until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//input[@placeholder='Type for hints...']")));
         FindEmployeeName.sendKeys(EmployeeName);
-
-
+        WebElement EmployeeDropDown = wait.until(ExpectedConditions.elementToBeClickable(
+        By.xpath("//div[contains(@class,'oxd-autocomplete-dropdown --position-bottom')]")));
+        EmployeeDropDown.click();
 
         WebElement FindUsername = wait.until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//input[@class='oxd-input oxd-input--active' and @autocomplete='off']")));
